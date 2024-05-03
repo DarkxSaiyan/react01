@@ -1,13 +1,14 @@
 
-
+import Dom from "./dom"
 
 
 function App() {
  
 
   return (
-   <h1>hello.js</h1> 
+    <Dom/>
   )
 }
 
-export default App
+//export default App
+export default Dom
