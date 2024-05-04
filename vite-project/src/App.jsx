@@ -6,7 +6,11 @@ function App() {
  
 
   return (
-    <Dom/>
+    <> 
+    
+      <Dom/>
+      
+    </>
   )
 }
 
