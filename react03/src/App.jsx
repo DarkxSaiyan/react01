@@ -1,24 +1,35 @@
-
+import { useState } from 'react'
 
 import './App.css'
 
 function App() {
 
-  let Counter = 15 
+ let [counter,setCounter] = useState(0) 
+  
+  //let counter = 15 
   
   const addValue = () =>{
-     console.log("clicked", Math.random())
-     Counter = counter + 1
      
+     counter = counter + 1
+     setCounter(counter)
+     console.log("clicked", counter);
+ 
+    }
+    const RemoveValue = ()=>{
+      counter = counter - 1
+      setCounter(counter)
+      console.log(counter);
+      
+
     }
   return (
     <>
       <h1>React learning</h1>
-      <h2>Counter Value:{Counter}</h2>
+      <h2>Counter Value:{counter}</h2>
 
       <button onClick={addValue}>Click</button>
       <br/>
-      <button>Remove value</button>
+      <button onClick={RemoveValue}>Remove value{counter} </button>
 
     </>
   )
