@@ -9,17 +9,22 @@ function App() {
   //let counter = 15 
   
   const addValue = () =>{
-     
-     counter = counter + 1
+    
+    counter = counter + 1
+     if(counter >=0)
+      
      setCounter(counter)
-     console.log("clicked", counter);
+     //console.log("clicked", counter);
  
     }
     const RemoveValue = ()=>{
-      counter = counter - 1
-      setCounter(counter)
-      console.log(counter);
+      counter = counter -1
       
+      if(counter >=0  ){
+        
+        setCounter(counter)
+        //console.log(counter);
+       } 
 
     }
   return (
